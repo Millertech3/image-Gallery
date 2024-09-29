@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	/* background-color: #f4f4f4; */
+	background-color: rgb(56, 54, 54);
+}
+#image-upload-form{
+    position: absolute;
+	display: flex;
+	flex-direction: column;
+    left: 1100px;
+    top: 1100px;
+    z-index: 10000000;
+	/* background-color: red;/ */
+} 
+
+@media(max-width: 760px){
+
+}
+@media(max-width: 456px){
+	#image-upload-form{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		left: 100px;
+		top: 600px;
+		z-index: 10000000;
+
+	} 
+}
+@media(max-width: 375px){
+	
+}
+#upload-button{
+background-color:  blue;
+border: 2px solid black;
+border-radius: 6px;
+width: 100px;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	gap: 20px;
+	padding: 20px;
+	max-width: 1000px;
+}
+.gallery-item{
+	width: 100%;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+	transform: scale(1.05);
+}
+
+/* Lightbox styling */
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox-content {
+	max-width: 90%;
+	max-height: 80%;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	z-index: 10000000;
+}
+
+.close:hover {
+	color: gray;
+}
+
+/* i hope it works */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-item {
+	width: 20%; /* adjust the width to your liking */
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer; /* add a pointer cursor on hover */
+}
+
+.gallery-item:hover {
+	transform: scale(1.1); /* add a hover effect */
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none; /* hide the lightbox by default */
+}
+
+.lightbox-content {
+	max-width: 80%; /* adjust the max width to your liking */
+	margin: 80px auto;
+	display: block;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: #fff;
+}
+
+/* two */
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox-content {
+	max-width: 80%;
+	margin: 40px auto;
+	display: block;
+}
+
+.lightbox-img {
+	width: 100%;
+	height: auto;
+	margin: auto;
+
+}
+
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: #fff;
+}
